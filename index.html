@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality rainjackets made for pushing the comfort zone on every adventure">
+    <title>Rainydays | Home</title>
+    <link href="styles/styles.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-banner">
+            <img src=icons/delivery-icon.png alt="deliverytruck icon" class="header-icon">
+            <p> Free delivery | 30 day return policy</p>
+        </div>
+        <div class="top-menu-user">
+        <a href="#"><img src="icons/profile-icon.png" alt="login" class="header-icon"><span>Login</span>
+        </a>
+        <a href="#"><img src="icons/help-icon.png" alt="help" class="header-icon"><span>Help</span>
+        </a>
+        </div>
+        <div class="main-menu">
+            <a href="index.html"><img src="Images/rainydays_logo.png" alt="rainydays logo" class="logo"></a>
+            <div>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav>
+                <ul>
+                    <li><a href="products.html">News</a></li>
+                    <li><a href="products.html">Men</a></li>
+                    <li><a href="products.html">Women</a></li>
+                    <li><a href="products.html">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="shopping-icons">
+                <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icon">
+                </a>
+                <a href="#"><img src="icons/heart-icon.png" alt="View wichlist" class="header-icon">
+                </a>
+                <a href="#"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icon">
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="home-header">
+            <div class="home-content">
+                <h1>Final sale</h1>
+                <p>Up to 50% off on selected items</p>
+                <a href="#" class="cta">Go to sale</a>
+            </div>
+        </section>
+        <section class="products-new">
+            <div class="products-header">
+                <div>
+                    <h2>New arrivals</h2>
+                    <p>Get ready for spring!</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="products.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                </div>
+                <div class=product-details>
+                    <a class="product-name-link" href="products.html" alt="Go to product: rain jacket">Rain jacket</a>
+                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                    <p>kr 1.089,00</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="products.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                </div>
+                <div class=product-details>
+                    <a class="product-name-link" href="products.html" alt="Go to product: rain jacket">Rain jacket</a>
+                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                    <p>kr 1.089,00</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="products.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                </div>
+                <div class=product-details>
+                    <a class="product-name-link" href="products.html" alt="Go to product: rain jacket">Rain jacket</a>
+                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                    <p>kr 1.089,00</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="products.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                </div>
+                <div class=product-details>
+                    <a class="product-name-link" href="products.html" alt="Go to product: rain jacket">Rain jacket</a>
+                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                    <p>kr 1.089,00</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Find the perfect fit for your adventure!</h3>
+            <p>We have the jacket you need for pushing the comfortzone</p>
+            <a class="cta" href="#">Go to guide</a>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-top">
+            <div>
+                <img src="icons/safe-payment-icon.png" alt="Safe payment icon">
+                <p class="footer-top-header">Safe payment</p>
+                <P>Our payment option are completely safe</P>
+            </div>
+            <div>
+                <img src="icons/delivery-icon.png" alt="deliverytruck icon" class="footer-delivery-icon">
+                <p class="footer-top-header">Delivery</p>
+                <P>We deliver within 3-5 working days after order</P>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p class="footer-bottom-header">About</p>
+                <a href="#" alt="Go to the about rainydays page">Rainydays</a>
+            </div>
+            <div>
+                <p class="footer-bottom-header">Customer sevice</p>
+                <a href="#" alt="Go to the help page">Help</a>
+                <a href="#" alt="Go to the contact us page">Contact us</a>
+                <a href="#" alt="Go to the delivery details page">Delivery details</a>
+                <a href="#" alt="Go to the return and exchange page">Return and exchange</a>
+            </div>
+            <div>
+                <p class="footer-bottom-header">Contact details</p>
+                <p>webshop@rainydays.com</p>
+            </div>
+            <div class="footer-bottom-newsletter">
+                <p class="footer-bottom-header">Newsletter</p>
+                <p>Register now to get news and exclusive offers from Rainydays</p>
+                <label for="email"></label>
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Subscribe" class="cta">
+            </div>
+        </div>
+        <div class="footer-banner">
+            Copyright &copy;
+        </div>
+    </footer>
+</body>
 </html>
