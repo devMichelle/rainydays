@@ -409,6 +409,10 @@ ______________ */
     flex-grow: 0;
   }
 
+  .home-content {
+    padding: 300px 0px 50px;
+  }
+
   .products-new {
     margin: 50px auto;
     grid-template-columns: repeat(2, 1fr);
@@ -459,5 +463,11 @@ ______________ */
 
   .guide {
     margin: 50px 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-content {
+    padding: 450px 0px 50px;
   }
 }
