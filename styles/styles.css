@@ -171,6 +171,11 @@ nav li:hover {
   border-style: solid;
   border-width: 3px;
 }
+
+.cta-small:hover {
+  border-width: 2px;
+}
+
 footer div a:hover {
   text-decoration: underline;
 }
@@ -184,42 +189,37 @@ ______________ */
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  min-height: 60vh;
-  position: relative;
+  min-height: 70vh;
 }
 
 .home-content {
   color: #fcfbfb;
-  position: absolute;
   text-align: center;
-  top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
   min-width: 210px;
+  padding: 250px 0px 50px;
 }
 
 .home-content h1 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0px auto 0px;
 }
 
 .home-content p {
-  margin: 0px 0px 40px 0px;
+  margin: 0px auto 40px;
 }
 
 .products-new {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1400px;
-  margin: 40px auto;
+  margin: 10px auto;
   grid-gap: 10px;
 }
 
 .products-header {
-  display: block;
   background-color: #ffa06d;
   color: #fcfbfb;
   text-align: center;
+  padding: 20px 0px;
 }
 
 .products-header h2 {
@@ -255,7 +255,6 @@ ______________ */
 .wishlist-icon {
   max-width: 30px;
   padding-top: 10px;
-  color: #000;
 }
 
 h1,
@@ -305,6 +304,7 @@ footer {
 hr {
   display: block;
   margin: 0px;
+  padding: 0px;
   color: #e5dfd9;
   opacity: 0.2;
 }
@@ -342,7 +342,6 @@ hr {
 .footer-bottom {
   display: grid;
   grid-template-columns: auto;
-  /* grid-template-rows: repeat (4, auto); */
   grid-gap: 10px;
   margin: 10px;
 }
@@ -365,6 +364,8 @@ input[type="email"] {
 
 input[type="submit"] {
   border: none;
+  position: relative;
+  bottom: 1.5px;
 }
 
 input[type="submit"]:focus {
@@ -385,9 +386,8 @@ input[type="email"]:focus {
   margin-top: 10px;
 }
 
-/* Media ----  */
-@media (min-width: 400px) {
-}
+/* Media 
+______________ */
 
 @media (min-width: 600px) {
   nav {
@@ -418,17 +418,24 @@ input[type="email"]:focus {
   .products-header {
     display: table;
     text-align: center;
+    min-height: 85.5%;
+    width: auto;
+    padding: 0px;
   }
+
   .products-header div {
     display: table-cell;
     vertical-align: middle;
   }
+
   .footer-bottom {
     grid-template-columns: 1fr 1fr 1fr 2fr;
   }
+
   .footer-about {
     justify-self: end;
   }
+
   .footer-customerserv {
     justify-self: center;
   }
@@ -436,8 +443,7 @@ input[type="email"]:focus {
 
 @media (min-width: 800px) {
   .home-header {
-    min-height: 70vh;
-    /* margin: 0px 50px; */
+    margin: 0px 40px;
   }
 
   .products-new {
@@ -450,22 +456,8 @@ input[type="email"]:focus {
     padding: 0px 40px;
     margin: 0px;
   }
-  /* 
-  .products-header {
-    margin-bottom: 77px;
-    margin-right: 100px;
-    display: table;
-    text-align: center;
+
+  .guide {
+    margin: 50px 40px;
   }
-  .products-header h2 {
-    padding: 0px 20px 5px;
-    margin: 0px;
-  }
-  .products-header p {
-    margin: 0px;
-  }
-  .products-header div {
-    display: table-cell;
-    vertical-align: middle;
-  } */
 }
