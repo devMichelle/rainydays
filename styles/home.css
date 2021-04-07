@@ -1,0 +1,110 @@
+/* Home Page 
+______________ */
+
+.home-header {
+  background-image: url("../images/home-header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  min-height: 70vh;
+}
+
+.home-content {
+  color: #fcfbfb;
+  text-align: center;
+  min-width: 210px;
+  padding: 250px 0px 50px;
+}
+
+.home-content h1 {
+  margin: 0px auto 0px;
+}
+
+.home-content p {
+  margin: 0px auto 40px;
+}
+
+.products-new {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1400px;
+  margin: 10px auto;
+  grid-gap: 10px;
+}
+
+.products-header {
+  background-color: #ffa06d;
+  color: #fcfbfb;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.products-header h2 {
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.products-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.product-details p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.product-name-link {
+  display: block;
+  font-weight: bold;
+  color: #000;
+  padding: 5px 0px;
+  margin: 0px;
+}
+
+.wishlist-icon {
+  max-width: 30px;
+  padding-top: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3em;
+  color: #fcfbfb;
+}
+
+p {
+  font-size: 1em;
+}
+
+p .product-name-link {
+  font-size: 1.5em;
+}
+
+.guide {
+  background-color: #002633;
+  margin: 50px 0px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.guide h3 {
+  margin: 5px auto;
+  padding-top: 20px;
+}
+
+.guide p {
+  color: #fcfbfb;
+  margin: 15px auto 50px;
+  padding: 0px;
+}

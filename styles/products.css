@@ -1,0 +1,129 @@
+.jackets-header {
+  background-color: var(--signature-blue);
+  text-align: center;
+  margin: 0px;
+  padding: 50px;
+}
+
+.jackets-layout {
+  display: grid;
+  grid-template-areas:
+    "filter sort"
+    "top-itemcount top-itemcount"
+    "jackets jackets"
+    "itemcount itemcount";
+}
+
+.filter {
+  grid-area: filter;
+  margin: 0px 5px;
+}
+
+.filter-header {
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.product-name-link {
+  font-weight: bold;
+  color: #000;
+  display: block;
+  padding: 5px 0px;
+}
+.filter p {
+  font-weight: bold;
+  color: #000;
+  padding: 5px 0px;
+}
+
+.filter {
+  left: 0px;
+  margin-left: 0px;
+  display: none;
+  position: absolute;
+  top: 380px;
+  background: #fcfbfb;
+  z-index: 1000;
+}
+
+.filter-button {
+  margin: 10px 5px;
+}
+
+#dropdown-filter {
+  display: none;
+}
+
+#dropdown-filter:checked ~ .filter {
+  display: block;
+  padding: 5px 20px 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+input[type="checkbox"] + label {
+  position: relative;
+  top: 0px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  text-decoration: underline;
+}
+
+.sort {
+  grid-area: sort;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.sort-by {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-sort {
+  display: block;
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+  right: 0px;
+  display: none;
+}
+
+.dropdown-sort div {
+  padding: 5px 10px;
+}
+
+.dropdown-sort div:hover {
+  font-weight: bold;
+}
+.sort-by:hover .dropdown-sort {
+  display: block;
+}
+
+.top-itemcount {
+  grid-area: top-itemcount;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.jackets {
+  grid-area: jackets;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1400px;
+  margin: 10px 5px;
+  grid-gap: 10px;
+}
+
+.bottom-itemcount {
+  grid-area: itemcount;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+main {
+  margin: 20px 5px;
+  display: grid;
+  grid-template-areas:
+    "contactform"
+    "csmenu";
+}
+
+.cs-menu {
+  grid-area: csmenu;
+}
+
+.cs-menu-header {
+  font-weight: bold;
+  padding: 20px 5px;
+  margin: 0px;
+}
+
+.cs-menu a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 5px;
+}
+
+.cs-menu a:hover {
+  text-decoration: underline;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.contact-form {
+  grid-area: contactform;
+  margin: 0px;
+}
+
+h1 {
+  color: #000;
+  margin: 0px;
+  font-size: 1.9em;
+}
+
+.contact-form p {
+  text-align: right;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+}
+
+#email-cs {
+  border: 1px solid #707070;
+  margin-right: 0px;
+  padding: 5px;
+}
+
+textarea {
+  min-height: 15vh;
+}
+
+input[type="submit"] {
+  margin: 0px auto;
+}

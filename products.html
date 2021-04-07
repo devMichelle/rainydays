@@ -4,9 +4,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality rainjackets for each season, shop by catagory">
     <title>Rainydays | Jackets</title>
+    <link href="styles/styles.css" rel="stylesheet"> 
+    <link href="styles/products.css" rel="stylesheet"> 
+    <link href="styles/media.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/rainydays_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header-banner">
+            <img src=icons/delivery-icon.png alt="deliverytruck icon" class="header-icons">
+            <p> Free delivery | 30 day return policy</p>
+        </div>
+        <div class="top-menu-user">
+            <a href="#"><img src="icons/profile-icon.png" alt="login" class="header-icons"><span class="top-menu-text">Login</span>
+            </a>
+            <a href="#"><img src="icons/help-icon.png" alt="help" class="header-icons"><span class="top-menu-text">Help</span>
+            </a>
+        </div>
+        <div class="main-menu">
+            <a href="index.html"><img src="Images/rainydays_logo.png" alt="rainydays logo" class="logo"></a>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" >
+            <nav>
+                <ul>
+                    <li><a href="products.html">News</a></li>
+                    <li><a href="products.html">Men</a></li>
+                    <li><a href="products.html">Women</a></li>
+                    <li><a href="products.html">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="shopping-icons">
+                <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icons">
+                </a>
+                <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
+                </a>
+                <a href="#"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <h1 class="jackets-header">Jackets</h1>
+        <div class="jackets-layout">
+            <!-- <label for="dropdown-filter" class="cta cta-small">Filter</label>
+            <input type="checkbox" id="dropdown-filter"> -->
+            <section class="filter-button">
+                <label for="dropdown-filter" class="cta cta-small label-drop-filter">Filter</label>
+                <input type="checkbox" id="dropdown-filter">
+                <div class="filter">
+                    <p class="filter-header">Filter</p>
+                    <div>
+                        <p>Price</p>
+                        <div>
+                            <input type="checkbox" id="price-filter-low" name="price-filter-low">
+                            <label for="price-filter-low">500 - 999</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="price-filter-high" name="price-filter-high">
+                            <label for="price">1000 - 1500</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Size</p>
+                        <div>
+                            <input type="checkbox" id="size-small" name="size-small">
+                            <label for="size-small">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="size-medium" name="size-medium">
+                            <label for="size-medium">M</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="size-large" name="size-large">
+                            <label for="size-medium">L</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Color</p>
+                        <div>
+                            <input type="checkbox" id="color-white" name="color-white">
+                            <label for="color-white">White</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="color-black" name="color-black">
+                            <label for="color-black">Black</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="color-orange" name="color-orange">
+                            <label for="color-orange">Orange</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sort">
+                <div class="sort-by">
+                <p class="cta cta-small hide-sort-button">Sort by</p>
+                    <div class="dropdown-sort">
+                        <div>
+                            <input type="radio" id="new-in" name="sort" value="new" checked>
+                            <label for="new-in">New in</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="price-low" name="sort" value="low">
+                            <label for="price-low">Price: low - high</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="price-high" name="sort" value="high">
+                            <label for="price-high">Price: high - low</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="top-itemcount">
+                <p>6 items</p>
+            </section>
+            <section class="jackets">
+                <div>
+                    <div>
+                        <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                    </div>
+                    <div class=product-details>
+                        <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
+                        <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                        <p>kr 1.089,00</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                    </div>
+                    <div class=product-details>
+                        <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
+                        <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                        <p>kr 1.089,00</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                    </div>
+                    <div class=product-details>
+                        <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
+                        <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                        <p>kr 1.089,00</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                    </div>
+                    <div class=product-details>
+                        <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
+                        <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                        <p>kr 1.089,00</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                    </div>
+                    <div class=product-details>
+                        <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
+                        <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                        <p>kr 1.089,00</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
+                    </div>
+                    <div class=product-details>
+                        <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
+                        <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                        <p>kr 1.089,00</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-itemcount">
+            <p>6 items</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-top">
+            <div>
+                <img src="icons/safe-payment-icon.png" alt="Safe payment icon">
+                <p class="footer-top-header">Safe payment</p>
+                <P>Our payment option are completely safe</P>
+            </div>
+            <div class="footer-top-delivery">
+                <img src="icons/delivery-icon-2.png" alt="deliverytruck icon" class="footer-delivery-icon">
+                <p class="footer-top-header">Delivery</p>
+                <P>We deliver within 3-5 working days after order</P>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links-section footer-about">
+                <p class="footer-bottom-header">About</p>
+                <a href="about.html">Rainydays</a>
+            </div>
+            <div class="footer-links-section footer-customerserv">
+                <p class="footer-bottom-header">Customer sevice</p>
+                <a href="#">Help</a>
+                <a href="contact.html">Contact us</a>
+                <a href="#">Delivery details</a>
+                <a href="#">Return and exchange</a>
+            </div>
+            <div class="footer-links-section footer-contact">
+                <p class="footer-bottom-header">Contact details</p>
+                <p>webshop@rainydays.com</p>
+            </div>
+            <div class="footer-bottom-newsletter">
+                <p class="footer-bottom-header">Newsletter</p>
+                <p>Register now to get news and exclusive offers from Rainydays</p>
+                <label for="email">Your email adress</label>
+                <div class="newsletter-textbox">
+                    <input type="email" name="email" placeholder="Email" id="email">
+                    <input type="submit" value="Subscribe" class="cta cta-small">
+                </div>
+            </div>
+        </div>
+        <div class="footer-banner">
+            Copyright &copy;
+        </div>
+    </footer>
 </body>
 </html>

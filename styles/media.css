@@ -1,0 +1,183 @@
+/* Media 
+______________ */
+
+@media (min-width: 600px) {
+  /* Header */
+  nav {
+    display: block;
+    position: static;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0px;
+    text-transform: uppercase;
+  }
+  .main-menu label {
+    display: none;
+  }
+  .main-menu {
+    justify-content: space-between;
+  }
+  .main-menu a {
+    flex-grow: 0;
+  }
+
+  /* Homepage (600px)*/
+  .home-content {
+    padding: 300px 0px 50px;
+  }
+
+  .products-new {
+    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .products-header {
+    display: table;
+    text-align: center;
+    min-height: 85.5%;
+    width: auto;
+    padding: 0px;
+  }
+
+  .products-header div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  /* Products-page (600px) */
+
+  .jackets {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  /* Contact-page (600px) */
+  .contact-us {
+    margin: 5px 50px;
+  }
+
+  /* Footer (600px)*/
+  .footer-bottom {
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+  }
+
+  .footer-about {
+    justify-self: end;
+  }
+
+  .footer-customerserv {
+    justify-self: center;
+  }
+}
+
+@media (min-width: 800px) {
+  /* Home-page */
+  .home-header {
+    margin: 0px 40px;
+  }
+
+  .products-new {
+    grid-template-columns: auto repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1400px;
+  }
+
+  .products-header h2 {
+    padding: 0px 40px;
+    margin: 0px;
+  }
+
+  .guide {
+    margin: 50px 40px;
+  }
+
+  /* Products-page (800px) */
+  .jackets-layout {
+    display: grid;
+    grid-template-areas:
+      "filter sort sort top-itemcount"
+      "filter jackets jackets jackets"
+      "filter jackets jackets jackets"
+      "itemcount itemcount itemcount itemcount";
+    margin: 40px auto;
+    max-width: 1600px;
+  }
+
+  .filter {
+    display: block;
+    position: relative;
+    top: -20px;
+    margin: 0px 20px 0px 5px;
+  }
+  .label-drop-filter {
+    display: none;
+  }
+
+  .sort {
+    margin: 0px auto;
+    text-align: center;
+  }
+  .sort-by:hover .dropdown-sort {
+    display: inline-flex;
+  }
+  .dropdown-sort {
+    display: flex;
+    position: relative;
+    box-shadow: none;
+    padding: 15px 0px 0px 75px;
+    margin: 0px;
+  }
+  .hide-sort-button {
+    display: none;
+  }
+
+  .jackets {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1400px;
+  }
+
+  /* About-page (800px) */
+  .about-text {
+    padding: 0px 75px;
+  }
+
+  /* Contact-page (800px) */
+  .contact-us {
+    grid-template-areas: "csmenu contactform";
+    grid-template-columns: auto 1fr;
+    margin: 50px auto 100px;
+  }
+  .cs-menu {
+    padding-right: 150px;
+  }
+  .cs-menu-header {
+    margin-bottom: 25px;
+  }
+
+  .contact-form {
+    width: 500px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-text {
+    padding: 0px 150px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-text {
+    padding: 0px 300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  /* Home-page */
+  .home-content {
+    padding: 450px 0px 50px;
+  }
+}

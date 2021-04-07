@@ -1,17 +1,39 @@
+@import "imports/variables.css";
+
 body {
   background-color: #fcfbfb;
   color: #000;
   margin: 0px;
   font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* fonts
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3em;
+  color: var(--white);
+}
+
+p {
+  font-size: 1em;
+}
+
 /* Header 
 _____________ */
 
+.header-icons {
+  max-width: 20px;
+}
+
+/* Banner */
 .header-banner {
   background-color: #e5dfd9;
   color: #000;
@@ -33,6 +55,7 @@ _____________ */
   font-size: 0.8em;
 }
 
+/* Top menu user */
 .top-menu-user {
   display: flex;
   justify-content: flex-end;
@@ -42,11 +65,12 @@ _____________ */
   padding-right: 10px;
 }
 
-.top-menu {
+.top-menu-text {
   position: relative;
   bottom: 3px;
 }
 
+/* Main menu */
 header {
   color: #002633;
 }
@@ -64,10 +88,11 @@ header {
 .shopping-icons {
   order: 2;
 }
+
 .logo {
   max-width: 120px;
   height: auto;
-  margin: 0px, 10px;
+  margin: 0px 10px;
   padding-top: 0px;
 }
 
@@ -97,9 +122,6 @@ nav li {
   text-decoration: none;
   padding: 5px 20px;
 }
-.header-icons {
-  max-width: 20px;
-}
 
 #hamburger-menu {
   display: none;
@@ -126,6 +148,10 @@ ______________ */
 
 .cta-small {
   font-size: 0.8em;
+  min-width: 130px;
+}
+.cta-blue {
+  background-color: var(--signature-blue);
 }
 
 /* links 
@@ -162,7 +188,6 @@ ______________ */
 nav li:hover {
   text-decoration: underline;
   font-weight: bold;
-  text-decoration-thickness: 3px;
 }
 
 .cta:hover {
@@ -174,14 +199,51 @@ nav li:hover {
 
 .cta-small:hover {
   border-width: 2px;
+  font-weight: bold;
+}
+
+.cta-blue:hover {
+  color: var(--signature-blue);
 }
 
 footer div a:hover {
   text-decoration: underline;
 }
 
+/* Products - featured on home-page and products-page*/
+
+.products-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.product-details p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.product-name-link {
+  display: block;
+  font-weight: bold;
+  color: #000;
+  padding: 5px 0px;
+  margin: 0px;
+}
+
+.wishlist-icon {
+  max-width: 30px;
+  padding-top: 10px;
+}
+
 /* Home Page 
-______________ */
+______________
 
 .home-header {
   background-image: url("../images/home-header-img.jpg");
@@ -289,7 +351,7 @@ p .product-name-link {
   color: #fcfbfb;
   margin: 15px auto 50px;
   padding: 0px;
-}
+}*/
 
 /* Footer
 ______________ */
@@ -387,7 +449,7 @@ input[type="email"]:focus {
 }
 
 /* Media 
-______________ */
+______________
 
 @media (min-width: 600px) {
   nav {
@@ -470,4 +532,4 @@ ______________ */
   .home-content {
     padding: 450px 0px 50px;
   }
-}
+} */
