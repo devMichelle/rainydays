@@ -64,6 +64,10 @@ ______________ */
     padding-right: 50px;
   }
 
+  .order-details {
+    padding-top: 75px;
+  }
+
   /* Checkout success-page (600px) */
   .order-details-item {
     padding-right: 80px;
