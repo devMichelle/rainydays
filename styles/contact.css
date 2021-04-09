@@ -1,4 +1,5 @@
-main {
+/*main*/
+.contact-us {
   margin: 20px 5px;
   display: grid;
   grid-template-areas:

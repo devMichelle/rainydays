@@ -43,14 +43,102 @@
                 </a>
                 <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
                 </a>
-                <a href="#"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
+                <a href="checkout.html"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
                 </a>
             </div>
         </div>
         <hr>
     </header>
-    <main>
-
+    <main class="checkout-layout">
+        <section class="checkout">
+            <h1>Checkout</h1>
+            <div class="signin-text">
+                <p>Already with us?</p>
+                <a href="#" class="signin">Sign in</a>
+            </div>
+            <div class="contactinfo">
+                <h2>Contact info</h2>
+                <p>*Mandatory</p>
+            </div>
+            <form action="#" method="POST">
+                <div class="form-wrapper">
+                    <input type="email" name="checkout-email" id="checkout-email" placeholder="Email*">
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number">
+                </div>
+                <h3>Delivery</h3>
+                <div class="form-wrapper">
+                    <input type="text" name="firstname" id="firstname" placeholder="First name*"> 
+                    <input type="text" name="lastname" id="lastname" placeholder="Last name*"> 
+                    <input type="text" name="adress" id="adress" placeholder="Adress*"> 
+                    <div class="city-details">
+                        <input type="text" name="citycode" id="citycode" placeholder="Citycode*"> 
+                        <input type="text" name="city" id="city" placeholder="City*"> 
+                    </div>
+                    <input type="text" name="contry" id="contry" placeholder="Contry*">
+                    <div>
+                        <input type="checkbox" name="billing" id="billing">
+                        <label for="billing">Use this adress for billing</label> 
+                    </div>
+                </div>
+                <h4>Delivery method</h4>
+                <div class="form-wrapper">
+                    <div>
+                        <input type="radio" name="shippingoption" id="standard">
+                        <label for="standard">Standard delivery</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="shippingoption" id="express">
+                        <label for="express">Express delivery</label>
+                    </div>
+                </div>
+                <h5>Choose an payment option</h5>
+                <div class="form-wrapper">
+                    <div>
+                        <input type="radio" name="paymentoption" id="invoice">
+                        <label for="invoice">Invoice</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="paymentoption" id="card">
+                        <label for="card">Card payment</label>
+                    </div>
+                    <div class="cardpayment-details">
+                        <input type="text" name="cardnumber" id="cardnumber" placeholder="Card number*">
+                        <input type="text" name="cvc" id="cvc" placeholder="CVC*">
+                    </div>
+                    <a href="checkout-success.html" class="cta cta-blue cta-wide">Complete purchase</a>
+                </div>
+            </form> 
+        </section>
+        <section class="order-details">
+            <div class="order-details-heading">
+                <h6>Order details</h6>
+                <p>(1)</p>
+            </div>
+            <div class="order-details-items">
+                <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image of orange rain jacket" class="product-img-small"></a>
+                <div>
+                    <a href="product-spesifics.html" class="order-details-product">Rain jacket</a>
+                    <p class="order-details-spes">Size: M</p>
+                    <p class="order-details-spes">Color: Orange</p>
+                    <p class="order-details-spes">Pieces: 1</p>
+                    <p class="order-details-spes">Price: 1.099,00</p>
+                </div>
+            </div>
+            <hr>
+            <div class="items-total">
+                <p>Items total</p>
+                <p>1.099,00</p>
+            </div>
+            <div class="deliverycost">
+                <p>Delivery</p>
+                <p>49,00</p>
+            </div>
+            <hr>
+            <div class="total">
+                <p>Total</p>
+                <p>1.148,00</p>
+            </div>
+        </section>
     </main>
     <footer>
         <hr>

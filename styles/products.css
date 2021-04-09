@@ -1,8 +1,8 @@
 .jackets-header {
   background-color: var(--signature-blue);
   text-align: center;
-  margin: 0px;
-  padding: 50px;
+  padding: var(--h1padding);
+  margin: var(--h1margin);
 }
 
 .jackets-layout {

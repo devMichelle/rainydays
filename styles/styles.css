@@ -150,6 +150,12 @@ ______________ */
   font-size: 0.8em;
   min-width: 130px;
 }
+
+.cta-wide {
+  text-transform: initial;
+  margin: 40px 5px;
+}
+
 .cta-blue {
   background-color: var(--signature-blue);
 }

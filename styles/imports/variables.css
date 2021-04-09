@@ -1,6 +1,17 @@
 :root {
+  /*colors*/
   --signature-blue: #002633;
   --white: #fcfbfb;
   --orange: #ffa06d;
   --sand: #e5dfd9;
+
+  /* font-size's */
+  --h1: 3em;
+  --h2: 1.9em;
+  --regular-text: 1.2em;
+  --order-details: 0.8em;
+
+  /* H1-header background size */
+  --h1padding: 50px;
+  --h1margin: 20px auto;
 }

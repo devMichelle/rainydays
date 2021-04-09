@@ -53,6 +53,22 @@ ______________ */
     grid-gap: 20px;
   }
 
+  /* Checkout-page (600px)*/
+
+  .checkout-layout {
+    grid-template-areas: "checkout orderdetails";
+    grid-template-columns: 1fr auto;
+  }
+
+  .checkout {
+    padding-right: 50px;
+  }
+
+  /* Checkout success-page (600px) */
+  .order-details-item {
+    padding-right: 80px;
+  }
+
   /* Contact-page (600px) */
   .contact-us {
     margin: 5px 50px;
@@ -137,6 +153,17 @@ ______________ */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 1400px;
+  }
+
+  /* Checkout-page (800px)*/
+
+  .checkout-layout {
+    grid-template-areas: "checkout orderdetails";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .order-details {
+    padding-left: 50px;
   }
 
   /* About-page (800px) */
