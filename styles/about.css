@@ -1,8 +1,6 @@
 main {
   text-align: center;
-  margin: 20px auto 50px;
-  padding: 0px 10px;
-  max-width: 1600px;
+  margin: 40px auto 100px;
 }
 .about-header {
   background-image: url(../images/about-header-img.jpg);
@@ -10,7 +8,7 @@ main {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  min-height: 40vh;
+  min-height: 20vh;
   margin-bottom: 50px;
 }
 

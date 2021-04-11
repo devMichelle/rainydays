@@ -1,7 +1,16 @@
 * {
   box-sizing: border-box;
 }
+/* Header menu */
+.header-banner,
+.top-menu-user,
+.main-menu nav,
+.main-menu div,
+.main-menu label {
+  display: none;
+}
 
+/* Checkout */
 /*main*/
 .checkout-layout {
   margin: 20px auto 50px;
@@ -83,6 +92,10 @@ input {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #707070;
+}
+.form-wrapper label {
+  position: relative;
+  top: 0.1px;
 }
 
 .city-details,

@@ -8,15 +8,11 @@ h4 {
 h1 {
   font-size: var(--h2);
 }
-h2,
-h3,
-h4 {
+h2 {
   font-size: var(--regular-text);
 }
 
-h2:hover,
-h3:hover,
-h4:hover {
+h2:hover {
   color: var(--orange);
   cursor: pointer;
 }
@@ -24,7 +20,7 @@ h4:hover {
 .product-spesifics {
   display: flex;
   flex-direction: column;
-  margin: 20px 0px 100px;
+  margin: 40px 0px 100px;
   max-width: 1100px;
 }
 
@@ -41,7 +37,6 @@ h4:hover {
   margin-top: 5px;
 }
 
-/* OK - Ikke media */
 .product-spesific-details {
   padding: 20px;
   grid-area: product-details;
@@ -52,14 +47,27 @@ h4:hover {
 .size-color-selector {
   padding-bottom: 30px;
 }
-.size-selector {
+.size-selector,
+.color-selector {
   display: flex;
   position: relative;
   right: 15px;
   top: 3.5px;
 }
+
+label:hover {
+  font-weight: bold;
+}
+
 .hide-radio {
   display: none;
+}
+
+input[type="radio"]:checked + label {
+  border: 2px solid;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 input[type="radio"],
@@ -79,9 +87,9 @@ label {
 }
 input[type="button"] {
   border: none;
+  text-decoration: none;
 }
 
-/*  OK */
 .product-specs {
   padding: 20px;
   grid-area: product-specs;

@@ -114,7 +114,7 @@ ______________ */
 @media (min-width: 800px) {
   /* Home-page */
   .home-header {
-    margin: 0px 40px;
+    margin: 40px auto;
   }
 
   .products-new {
@@ -129,18 +129,17 @@ ______________ */
   }
 
   .guide {
-    margin: 50px 40px;
+    margin: 50px auto 100px;
   }
 
   /* Products-page (800px) */
   .jackets-layout {
     display: grid;
     grid-template-areas:
-      "filter sort sort top-itemcount"
+      "sort sort sort top-itemcount"
       "filter jackets jackets jackets"
       "filter jackets jackets jackets"
       "itemcount itemcount itemcount itemcount";
-    margin: 40px auto;
     max-width: 1600px;
   }
 
@@ -150,17 +149,25 @@ ______________ */
     top: -20px;
     margin: 0px 20px 0px 5px;
   }
+
   .label-drop-filter {
     display: none;
+  }
+
+  #dropdown-filter:checked ~ .filter {
+    padding: 0px 20px 10px;
+    box-shadow: none;
   }
 
   .sort {
     margin: 0px auto;
     text-align: center;
   }
+
   .sort-by:hover .dropdown-sort {
     display: inline-flex;
   }
+
   .dropdown-sort {
     display: flex;
     position: relative;
@@ -168,6 +175,7 @@ ______________ */
     padding: 15px 0px 0px 75px;
     margin: 0px;
   }
+
   .hide-sort-button {
     display: none;
   }
@@ -213,8 +221,12 @@ ______________ */
   }
 
   /* About-page (800px) */
+  .about-header {
+    min-height: 40vh;
+  }
   .about-text {
     padding: 0px 75px;
+    max-width: 1600px;
   }
 
   /* Contact-page (800px) */

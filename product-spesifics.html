@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rainjacket spesifics">
+    <meta name="description" content="Rainjacket specifics">
     <title>Rainydays | Rainjacket</title>
     <link href="styles/styles.css" rel="stylesheet"> 
     <link href="styles/product-spesifics.css" rel="stylesheet"> 
@@ -73,25 +73,28 @@
                 <div>
                 <p>Choose color:</p>
                     <div class="color-selector">
-                        <input type="radio" name="color" id="black">
-                        <input type="radio" name="color" id="white">
-                        <input type="radio" name="color" id="orange">
+                        <input type="radio" name="color" id="black" class="hide-radio">
+                        <label for="black">Black</label>
+                        <input type="radio" name="color" id="white" class="hide-radio">
+                        <label for="white">White</label>
+                        <input type="radio" name="color" id="orange" class="hide-radio" checked>
+                        <label for="orange">Orange</label>
                     </div>
                 </div>
                 <div>
                 <p>Choose size:</p>
                     <div class="size-selector">
                         <div>
-                            <label for="small">S</label>
                             <input type="radio" name="size" id="small" class="hide-radio">
+                            <label for="small">S</label>
                         </div>
                         <div>
+                            <input type="radio" name="size" id="medium" class="hide-radio" checked>
                             <label for="medium">M</label>
-                            <input type="radio" name="size" id="medium" class="hide-radio">
                         </div>
                         <div>
-                            <label for="large">L</label>
                             <input type="radio" name="size" id="large" class="hide-radio">
+                            <label for="large">L</label>
                         </div>
                     </div>
                 </div>

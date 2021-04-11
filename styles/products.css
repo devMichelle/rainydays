@@ -12,11 +12,24 @@
     "top-itemcount top-itemcount"
     "jackets jackets"
     "itemcount itemcount";
+  margin: 40px auto 100px;
+  padding: 0px 5px;
+}
+
+.filter-button {
+  margin: 10px 5px;
 }
 
 .filter {
   grid-area: filter;
   margin: 0px 5px;
+  left: 0px;
+  margin-left: 0px;
+  display: none;
+  position: absolute;
+  top: 418px;
+  background: #fcfbfb;
+  z-index: 1000;
 }
 
 .filter-header {
@@ -24,30 +37,10 @@
   font-size: 1.3em;
 }
 
-.product-name-link {
-  font-weight: bold;
-  color: #000;
-  display: block;
-  padding: 5px 0px;
-}
 .filter p {
   font-weight: bold;
   color: #000;
   padding: 5px 0px;
-}
-
-.filter {
-  left: 0px;
-  margin-left: 0px;
-  display: none;
-  position: absolute;
-  top: 380px;
-  background: #fcfbfb;
-  z-index: 1000;
-}
-
-.filter-button {
-  margin: 10px 5px;
 }
 
 #dropdown-filter {
@@ -123,7 +116,15 @@ input[type="radio"]:checked + label {
   grid-gap: 10px;
 }
 
+.product-name-link {
+  font-weight: bold;
+  color: #000;
+  display: block;
+  padding: 5px 0px;
+}
+
 .bottom-itemcount {
   grid-area: itemcount;
   text-align: center;
+  margin-top: 40px;
 }
