@@ -62,13 +62,30 @@
             <p>*Mandatory</p>
             <form action="#" method="POST">
                 <div class="form-wrapper">
-                    <input type="text" name="first-name" placeholder="First name*" id="first-name" required>
-                    <input type="text" name="last-name" placeholder="Last name*" id="last-name" required>
-                    <input type="email" name="email-cs" placeholder="Email*" id="email-cs" required>
-                    <input type="tel" name="tel" placeholder="Phone number" id="tel">
-                    <input type="text" name="ordernr" placeholder="Order number" id="ordernr">
-                    <input type="text" name="subject" placeholder="Subject*" id="subject" required>
-                    <textarea name="message" placeholder="Write your message here.."></textarea>
+                    <div>
+                        <label for="first-name">First name*</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last name*</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email-cs">Email*</label>
+                        <input type="email" name="email-cs" id="email-cs" required>
+                    </div>
+                    <div>
+                        <label for="tel">Phone number*</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div>
+                        <label for="ordernr">Ordernumber*</label>
+                        <input type="text" name="ordernr" id="ordernr">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Write your message here.."></textarea>
+                    </div>
                     <input type="submit" value="Send" class="cta cta-small cta-blue">
                 </div>
             </form>

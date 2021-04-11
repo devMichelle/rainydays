@@ -82,6 +82,15 @@ h6 {
   flex-direction: column;
 }
 
+.label-wrap {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.form-wrapper label {
+  position: relative;
+  right: 20px;
+}
+
 #checkout-email {
   border: 1px solid #707070;
   margin-right: 0px;
@@ -101,6 +110,10 @@ input {
 .city-details,
 .cardpayment-details {
   display: flex;
+}
+
+.cardpayment-details {
+  padding-top: 10px;
 }
 
 .order-details {

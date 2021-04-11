@@ -62,19 +62,43 @@
             </div>
             <form action="#" method="POST">
                 <div class="form-wrapper">
-                    <input type="email" name="checkout-email" id="checkout-email" placeholder="Email*" required>
-                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number">
+                    <div class="label-wrap">
+                        <label for="checkout-email">Email*</label>
+                        <input type="email" name="checkout-email" id="checkout-email" required>
+                    </div>
+                    <div class="label-wrap">
+                        <label for="phonenumber">Phone number*</label>
+                        <input type="tel" name="phonenumber" id="phonenumber">
+                    </div>
                 </div>
                 <h3>Delivery</h3>
                 <div class="form-wrapper">
-                    <input type="text" name="firstname" id="firstname" placeholder="First name*" required> 
-                    <input type="text" name="lastname" id="lastname" placeholder="Last name*" required> 
-                    <input type="text" name="adress" id="adress" placeholder="Adress*" required> 
-                    <div class="city-details">
-                        <input type="text" name="citycode" id="citycode" placeholder="Citycode*" required> 
-                        <input type="text" name="city" id="city" placeholder="City*" required> 
+                    <div class="label-wrap">
+                        <label for="firstname">First name*</label>
+                        <input type="text" name="firstname" id="firstname" required> 
                     </div>
-                    <input type="text" name="contry" id="contry" placeholder="Contry*" required>
+                    <div class="label-wrap">
+                        <label for="lastname">Last name*</label>
+                        <input type="text" name="lastname" id="lastname" required> 
+                    </div>
+                    <div class="label-wrap">
+                        <label for="adress">Adress*</label>
+                        <input type="text" name="adress" id="adress" required> 
+                    </div>
+                    <div class="city-details">
+                        <div class="label-wrap">
+                            <label for="citycode">Citycode*</label>
+                            <input type="text" name="citycode" id="citycode" required> 
+                        </div>
+                        <div class="label-wrap">
+                            <label for="city">City*</label>
+                            <input type="text" name="city" id="city" required> 
+                        </div>
+                    </div>
+                    <div class="label-wrap">
+                        <label for="contry">Contry*</label>
+                        <input type="text" name="contry" id="contry" required>
+                    </div>
                     <div>
                         <input type="checkbox" name="billing" id="billing">
                         <label for="billing">Use this adress for billing</label> 
@@ -102,8 +126,14 @@
                         <label for="card">Card payment</label>
                     </div>
                     <div class="cardpayment-details">
-                        <input type="text" name="cardnumber" id="cardnumber" placeholder="Card number*" required>
-                        <input type="text" name="cvc" id="cvc" placeholder="CVC*" required>
+                        <div class="label-wrap">
+                            <label for="cardnumber">Cardnumber*</label>
+                            <input type="text" name="cardnumber" id="cardnumber" required>
+                        </div>
+                            <div class="label-wrap">
+                                <label for="cvc">cvc*</label>
+                            <input type="text" name="cvc" id="cvc" required>
+                        </div>
                     </div>
                     <a href="checkout-success.html" class="cta cta-blue cta-wide">Complete purchase</a>
                 </div>

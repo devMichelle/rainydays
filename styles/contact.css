@@ -53,6 +53,15 @@ h1 {
   flex-direction: column;
 }
 
+.form-wrapper div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.form-wrapper label {
+  position: relative;
+  right: 20px;
+}
+
 input,
 textarea {
   padding: 5px;
