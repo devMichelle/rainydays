@@ -1,3 +1,3 @@
 # Rainydays
-Online store
-First independent project
+Online store - 
+(First independent project)
