@@ -71,33 +71,47 @@
         <section class="contact-form">
             <h1>Contact us</h1>
             <p>*Mandatory</p>
-            <form action="#" method="POST">
-                <div class="form-wrapper">
-                    <div>
-                        <label for="first-name">First name*</label>
-                        <input type="text" name="first-name" id="first-name" required>
-                    </div>
-                    <div>
-                        <label for="last-name">Last name*</label>
-                        <input type="text" name="last-name" id="last-name" required>
-                    </div>
-                    <div>
-                        <label for="email-cs">Email*</label>
-                        <input type="email" name="email-cs" id="email-cs" required>
-                    </div>
-                    <div>
-                        <label for="tel">Phone number*</label>
+            <form class="form-wrapper" id="contactForm">
+                <div>
+                    <label for="fname" class="form-input">
+                        First name*
+                        <input type="text" name="fname" id="fname">
+                    </label>
+                    <div class="form-error" id="firstNameError">Please enter your first name</div>
+                </div>
+                <div>
+                    <label for="lname" class="form-input">
+                        Last name*
+                        <input type="text" name="lname" id="lname">
+                    </label>
+                    <div class="form-error" id="lastNameError">Please enter your last name</div>
+                </div>
+                <div>
+                    <label for="email-cs" class="form-input">Email*
+                        <input type="email" name="email-cs" id="email-cs">
+                    </label>
+                    <div class="form-error" id="emailError">Please enter a valid email adress</div>
+                </div>
+                <div>
+                    <label for="tel" class="form-input">Phone number
                         <input type="tel" name="tel" id="tel">
-                    </div>
-                    <div>
-                        <label for="ordernr">Ordernumber*</label>
+                    </label>
+                </div>
+                <div>
+                    <label for="ordernr" class="form-input">Ordernumber
                         <input type="text" name="ordernr" id="ordernr">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
+                    </label>
+                </div>
+                <div>
+                    <label for="message" class="form-input">
+                        Message*
                         <textarea name="message" id="message" placeholder="Write your message here.."></textarea>
-                    </div>
-                    <input type="submit" value="Send" class="cta cta-small cta-blue">
+                    </label>
+                    <div class="form-error" id="messageError">Please state what the inquiry is regarding</div>
+                </div>
+                <input type="submit" value="Send" class="cta cta-small cta-blue">
+                <div id="formSuccess">
+                    Your inquiry was submitted successfully and we will get back to you shortly.
                 </div>
             </form>
         </section>
@@ -146,5 +160,6 @@
             Copyright &copy;
         </div>
     </footer>
+    <script src="js/contact.js"></script>
 </body>
 </html>

@@ -48,15 +48,16 @@ h1 {
   text-align: right;
 }
 
-.form-wrapper {
+/* .form-wrapper {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.form-wrapper div {
+/* .form-wrapper div {
   display: flex;
   flex-direction: column-reverse;
-}
+} */
+
 .form-wrapper label {
   position: relative;
   right: 20px;
@@ -65,7 +66,7 @@ h1 {
 input,
 textarea {
   padding: 5px;
-  margin-bottom: 10px;
+  margin: 0px 0px 5px;
   border: 1px solid #707070;
   box-sizing: border-box;
 }
@@ -83,3 +84,30 @@ textarea {
 input[type="submit"] {
   margin: 0px auto;
 }
+
+#formSuccess {
+  background-color: white;
+  border: 2px solid #002633;
+  border-radius: 3px;
+  padding: 20px;
+  margin-top: 20px;
+  display: none;
+}
+
+.form-error {
+  color: darkred;
+  display: none;
+  margin: 0px 0px 15px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #messageError,
+#emailError,
+#lastNameError,
+#firstNameError {
+  display: none;
+} */
