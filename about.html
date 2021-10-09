@@ -53,7 +53,7 @@
                 <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icons">
                 </a>
                 <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
-                </a>
+                    <span class="counter-wishlist wishlist-total"></span></a>
                 <a href="checkout.html"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
                 </a>
             </div>
@@ -81,6 +81,9 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At debitis vel blanditiis earum, totam corporis laborum, quaerat omnis labore, magni sit. Officia est nemo nihil et fugit at. Doloribus, aliquid!</p>
             </div>
         </section>
+        <div class="backtotop">
+        <a href="about.html#top" class="back-link">Go back to top</a>
+        </div>
     </main>
     <footer>
         <hr>
@@ -116,15 +119,18 @@
                 <p class="footer-bottom-header">Newsletter</p>
                 <p>Register now to get news and exclusive offers from Rainydays</p>
                 <label for="email">Your email adress</label>
-                <div class="newsletter-textbox">
-                    <input type="email" name="email" placeholder="Email" id="email">
+                <form class="newsletter-textbox">
+                    <input type="email" name="email" placeholder="Email" id="emailSub">
                     <input type="submit" value="Subscribe" class="cta cta-small">
-                </div>
+                    <div class="newsletter-error"></div>
+                    <div class="newsletter-subscribed"></div>
+                </form>
             </div>
         </div>
         <div class="footer-banner">
             Copyright &copy;
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

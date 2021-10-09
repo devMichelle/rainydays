@@ -48,16 +48,6 @@ h1 {
   text-align: right;
 }
 
-/* .form-wrapper {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .form-wrapper div {
-  display: flex;
-  flex-direction: column-reverse;
-} */
-
 .form-wrapper label {
   position: relative;
   right: 20px;
@@ -83,6 +73,7 @@ textarea {
 
 input[type="submit"] {
   margin: 0px auto;
+  border: 2px solid transparent;
 }
 
 #formSuccess {
@@ -104,10 +95,3 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
 }
-
-/* #messageError,
-#emailError,
-#lastNameError,
-#firstNameError {
-  display: none;
-} */

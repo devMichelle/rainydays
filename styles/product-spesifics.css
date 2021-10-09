@@ -28,6 +28,7 @@ h2:hover {
   grid-area: product-images;
   padding: 0px 20px;
 }
+
 .product-image {
   width: 100%;
 }
@@ -79,14 +80,42 @@ label {
 .add-to-cart {
   display: flex;
 }
-.add-to-cart div {
+
+/* .counter-button {
+  display: flex;
+  margin-right: 50px;
+} */
+
+/* .minus-button,
+.plus-button {
+  background-color: var(--white);
+  border: 2px solid var(--signature-blue);
+  color: var(--signature-blue);
+  border-radius: 5px;
+  padding: 0px 15px;
+  font-weight: bold;
+}
+
+.minus-button:active,
+.plus-button:active {
+  background-color: var(--signature-blue);
+  color: var(--white);
+  border: 2px solid transparent;
+} */
+
+/* .counter {
+  padding: 0px 15px;
+} */
+
+/* .add-to-cart div {
   border: 1px solid var(--sand);
   padding: 10px 20px;
   margin-right: 20px;
   text-align: center;
-}
+} */
+
 input[type="button"] {
-  border: none;
+  border: 2px solid var(--signature-blue);
   text-decoration: none;
 }
 

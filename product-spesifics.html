@@ -53,9 +53,9 @@
                 <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icons">
                 </a>
                 <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
-                </a>
+                <span class="counter-wishlist wishlist-total"></span></a>
                 <a href="checkout.html"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
-                </a>
+                <span class="counter-shoppingcart cart-total"></span></a>
             </div>
         </div>
         <hr>
@@ -76,7 +76,7 @@
             </div>
         </section>
         <section class="product-spesific-details">
-            <h1>Rain jacket</h1>
+            <h1>Senja 2.0</h1>
             <p class="product-price">Kr 1.099,00</p>
             <!-- put in link for "rate this item" here -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos officia delectus autem obcaecati? Quo omnis veniam repellat. Tenetur, quidem? Vel libero aspernatur accusantium cupiditate commodi hic blanditiis officia facilis.</p>
@@ -111,10 +111,14 @@
                 </div>
             </div>
             <div class="add-to-cart">
-                <div>- 1 +</div>
-                <input type="button" value="Add to cart" class="cta cta-small cta-blue"> 
+                <!-- <div class="counter-button">
+                    <button class="minus-button">-</button>
+                    <p class="counter">1</p>
+                    <button class="plus-button">+</button>
+                </div> -->
+                <input type="button" value="Add to cart" class="cta cta-small cta-blue" id="addToCart"> 
             </div>
-            <!-- put in "add to wishlist" here. img and p styled with :active -->
+            <button class="add-to-wishlist"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"> Add to wishlist</button>
         </section>
         <section class="product-specs">
             <div class="product-specs-header">
@@ -161,15 +165,19 @@
                 <p class="footer-bottom-header">Newsletter</p>
                 <p>Register now to get news and exclusive offers from Rainydays</p>
                 <label for="email">Your email adress</label>
-                <div class="newsletter-textbox">
-                    <input type="email" name="email" placeholder="Email" id="email">
+                <form class="newsletter-textbox">
+                    <input type="email" name="email" placeholder="Email" id="emailSub">
                     <input type="submit" value="Subscribe" class="cta cta-small">
-                </div>
+                    <div class="newsletter-error"></div>
+                    <div class="newsletter-subscribed"></div>
+                </form>
             </div>
         </div>
         <div class="footer-banner">
             Copyright &copy;
         </div>
     </footer>
+    <script src="js/product-spesific.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

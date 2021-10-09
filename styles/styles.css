@@ -79,6 +79,7 @@ _____________ */
 header {
   color: #002633;
 }
+
 .main-menu {
   display: flex;
   align-items: baseline;
@@ -91,6 +92,21 @@ header {
 
 .shopping-icons {
   order: 2;
+}
+
+.counter-shoppingcart,
+.counter-wishlist {
+  color: var(--signature-blue);
+  background-color: var(--white);
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 0px 4px;
+  position: relative;
+  right: 15px;
+  top: 3px;
+  display: none;
 }
 
 .logo {
@@ -147,12 +163,14 @@ ______________ */
   font-size: 1.5em;
   text-align: center;
   margin: 0px;
-  border-radius: 3px;
+  border: 3px solid transparent;
+  border-radius: 5px;
   transition-duration: 0.3s;
 }
 
 .cta-small {
   font-size: 0.8em;
+  border: 2px solid transparent;
 }
 
 .cta-wide {
@@ -162,6 +180,19 @@ ______________ */
 
 .cta-blue {
   background-color: var(--signature-blue);
+}
+
+.add-to-wishlist {
+  border: none;
+  background-color: inherit;
+  color: var(--signature-blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wishlist-icon {
+  max-width: 30px;
+  padding-top: 10px;
 }
 
 /* links 
@@ -188,6 +219,17 @@ footer a {
   text-decoration: underline;
 }
 
+.backtotop {
+  margin: 100px 50px 50px 0px;
+  text-align: right;
+  max-width: 1600px;
+}
+
+.back-link {
+  color: #000;
+  text-decoration: underline;
+}
+
 /* Hover
 ______________ */
 
@@ -203,53 +245,25 @@ nav li:hover {
 .cta:hover {
   color: #ffa06d;
   background-color: #fcfbfb;
-  border-style: solid;
-  border-width: 3px;
+  border: 3px solid var(--orange);
 }
 
 .cta-small:hover {
-  border-width: 2px;
+  border: 2px solid;
   font-weight: bold;
 }
 
 .cta-blue:hover {
   color: var(--signature-blue);
+  border-color: var(--signature-blue);
+}
+
+.back-link:hover {
+  font-weight: bold;
 }
 
 footer div a:hover {
   text-decoration: underline;
-}
-
-/* Products - featured on home-page and products-page*/
-
-.products-img {
-  width: 100%;
-  height: auto;
-}
-
-.product-details {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-}
-
-.product-details p {
-  padding: 0px;
-  margin: 0px;
-}
-
-.product-name-link {
-  display: block;
-  font-weight: bold;
-  color: #000;
-  padding: 5px 0px;
-  margin: 0px;
-}
-
-.wishlist-icon {
-  max-width: 30px;
-  padding-top: 10px;
 }
 
 /* Footer
@@ -325,7 +339,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  border: none;
+  border: 2px solid var(--orange);
   position: relative;
   bottom: 1.5px;
 }
@@ -342,8 +356,32 @@ input[type="email"]:focus {
   outline: none;
 }
 
+.newsletter-error {
+  color: darkred;
+  display: none;
+}
+
+.newsletter-subscribed {
+  background-color: var(--white);
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+  padding: 0px 10px;
+  max-width: 330px;
+  display: none;
+}
+
 .footer-banner {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
+}
+
+/* --------------------------------
+               Error
+-------------------------------- */
+
+.form-error {
+  color: darkred;
+  display: none;
+  margin: 0px 0px 15px;
 }

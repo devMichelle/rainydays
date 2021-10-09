@@ -165,3 +165,9 @@ input {
   display: flex;
   justify-content: space-between;
 }
+
+/* .form-error {
+  color: darkred;
+  display: none;
+  margin: 0px 0px 15px;
+} */

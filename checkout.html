@@ -53,7 +53,7 @@
                 <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icons">
                 </a>
                 <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
-                </a>
+                    <span class="counter-wishlist wishlist-total"></span></a>
                 <a href="checkout.html"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
                 </a>
             </div>
@@ -71,11 +71,12 @@
                 <h2>Contact info</h2>
                 <p>*Mandatory</p>
             </div>
-            <form action="#" method="POST">
+            <form id="checkoutForm">
                 <div class="form-wrapper">
                     <div class="label-wrap">
                         <label for="checkout-email">Email*</label>
-                        <input type="email" name="checkout-email" id="checkout-email" required>
+                        <input type="email" name="checkout-email" id="checkout-email">
+                        <div class="form-error" id="checkout-email-error">Please enter a valid email address</div>
                     </div>
                     <div class="label-wrap">
                         <label for="phonenumber">Phone number*</label>
@@ -146,14 +147,15 @@
                             <input type="text" name="cvc" id="cvc" required>
                         </div>
                     </div>
-                    <a href="checkout-success.html" class="cta cta-blue cta-wide">Complete purchase</a>
+                  <!-- <button type="submit">button</button> -->
+                  <a href="checkout-success.html" class="cta cta-blue cta-wide">Complete purchase</a>
                 </div>
             </form> 
         </section>
         <section class="order-details">
             <div class="order-details-heading">
                 <h6>Order details</h6>
-                <p>(1)</p>
+                <p class="checkout-count"></p>
             </div>
             <div class="order-details-items">
                 <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image of orange rain jacket" class="product-img-small"></a>
@@ -161,23 +163,23 @@
                     <a href="product-spesifics.html" class="order-details-product">Rain jacket</a>
                     <p class="order-details-spes">Size: M</p>
                     <p class="order-details-spes">Color: Orange</p>
-                    <p class="order-details-spes">Pieces: 1</p>
                     <p class="order-details-spes">Price: 1.099,00</p>
+                    <p class="order-details-spes order-details-count"></p>
                 </div>
             </div>
             <hr>
             <div class="items-total">
-                <p>Items total</p>
-                <p>1.099,00</p>
+                <!-- <p>Items total</p>
+                <p>1.099,00</p> -->
             </div>
             <div class="deliverycost">
                 <p>Delivery</p>
-                <p>49,00</p>
+                <p>Free</p>
             </div>
             <hr>
             <div class="total">
-                <p>Total</p>
-                <p>1.148,00</p>
+                <!-- <p>Total</p>
+                <p>1.099,00</p> -->
             </div>
         </section>
     </main>
@@ -215,15 +217,19 @@
                 <p class="footer-bottom-header">Newsletter</p>
                 <p>Register now to get news and exclusive offers from Rainydays</p>
                 <label for="email">Your email adress</label>
-                <div class="newsletter-textbox">
-                    <input type="email" name="email" placeholder="Email" id="email">
+                <form class="newsletter-textbox">
+                    <input type="email" name="email" placeholder="Email" id="emailSub">
                     <input type="submit" value="Subscribe" class="cta cta-small">
-                </div>
+                    <div class="newsletter-error"></div>
+                    <div class="newsletter-subscribed"></div>
+                </form>
             </div>
         </div>
         <div class="footer-banner">
             Copyright &copy;
         </div>
     </footer>
+    <script src="js/checkout.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

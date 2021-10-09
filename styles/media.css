@@ -56,15 +56,15 @@ ______________ */
   /* Product-spesifics-page (600px) */
 
   .product-spesific-images {
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex;
+    flex-direction: row-reverse; */
   }
   .product-image-thumbnails {
-    flex-direction: column;
-    margin-right: 40px;
+    /* flex-direction: column; */
+    /* margin-right: 40px;
     margin-top: 0px;
     max-width: 30vh;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
   }
 
   .product-specs-header {

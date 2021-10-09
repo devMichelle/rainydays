@@ -10,7 +10,6 @@ const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
-//console.log("hello")
 
 function validateForm() {
     event.preventDefault();

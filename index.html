@@ -53,14 +53,14 @@
                 <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icons">
                 </a>
                 <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
-                </a>
+                    <span class="counter-wishlist wishlist-total"></span></a>
                 <a href="checkout.html"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
                 </a>
             </div>
         </div>
         <hr>
     </header>
-    <main>
+    <main id="top">
         <section class="home-header">
             <div class="home-content">
                 <h1>Final sale</h1>
@@ -75,35 +75,35 @@
                     <p>Get ready for spring!</p>
                 </div>
             </div>
-            <div>
+            <div class="product-section">
                 <div>
                     <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
                 </div>
-                <div class=product-details>
-                    <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
-                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                <div class="product-details">
+                    <a class="product-name-link" href="product-spesifics.html">Senja 2.0</a>
                     <p>kr 1.089,00</p>
                 </div>
+                <div>Insulated rainjacket</div>
             </div>
-            <div>
+            <div class="product-section">
                 <div>
                     <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
                 </div>
-                <div class=product-details>
-                    <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
-                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist" class="wishlist-icon"></a>
+                <div class="product-details">
+                    <a class="product-name-link" href="product-spesifics.html">Senja 2.0</a>
                     <p>kr 1.089,00</p>
                 </div>
+                <div>Insulated rainjacket</div>
             </div>
-            <div>
+            <div class="product-section">
                 <div>
                     <a href="product-spesifics.html"><img src="images/product_img_2.jpg" alt="Product image, go to product: rain jacket" class="products-img"></a>
                 </div>
-                <div class=product-details>
-                    <a class="product-name-link" href="product-spesifics.html">Rain jacket</a>
-                    <a href="#"><img src="icons/heart-icon.png" alt="Add to wishlist icon" class="wishlist-icon"></a>
+                <div class="product-details">
+                    <a class="product-name-link" href="product-spesifics.html">Senja 2.0</a>
                     <p>kr 1.089,00</p>
                 </div>
+                <div>Insulated rainjacket</div>
             </div>
         </section>
         <section class="guide">
@@ -111,6 +111,9 @@
             <p>We have the jacket you need for pushing the comfortzone</p>
             <a class="cta" href="#">Go to guide</a>
         </section>
+        <div class="backtotop">
+            <a href="index.html#top" class="back-link">Go back to top</a>
+        </div>
     </main>
     <footer>
         <hr>
@@ -146,15 +149,18 @@
                 <p class="footer-bottom-header">Newsletter</p>
                 <p>Register now to get news and exclusive offers from Rainydays</p>
                 <label for="email">Your email adress</label>
-                <div class="newsletter-textbox">
-                    <input type="email" name="email" placeholder="Email" id="email">
+                <form class="newsletter-textbox">
+                    <input type="email" name="email" placeholder="Email" id="emailSub">
                     <input type="submit" value="Subscribe" class="cta cta-small">
-                </div>
+                    <div class="newsletter-error"></div>
+                    <div class="newsletter-subscribed"></div>
+                </form>
             </div>
         </div>
         <div class="footer-banner">
             Copyright &copy;
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
