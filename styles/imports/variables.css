@@ -2,8 +2,10 @@
   /*colors*/
   --signature-blue: #002633;
   --white: #fcfbfb;
-  --orange: #ffa06d;
+  /* --orange: #ffa06d; */
   --sand: #e5dfd9;
+
+  --orange: #ff945b;
 
   /* font-size's */
   --h1: 3em;

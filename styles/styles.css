@@ -157,7 +157,7 @@ ______________ */
 
 .cta {
   text-transform: uppercase;
-  background-color: #ffa06d;
+  background-color: var(--orange);
   color: #fcfbfb;
   padding: 10px 30px;
   font-size: 1.5em;
