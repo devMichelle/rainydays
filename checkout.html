@@ -83,7 +83,7 @@
                         <input type="tel" name="phonenumber" id="phonenumber">
                     </div>
                 </div>
-                <h3>Delivery</h3>
+                <h2>Delivery</h2>
                 <div class="form-wrapper">
                     <div class="label-wrap">
                         <label for="firstname">First name*</label>
@@ -116,45 +116,49 @@
                         <label for="billing">Use this adress for billing</label> 
                     </div>
                 </div>
-                <h4>Delivery method</h4>
-                <div class="form-wrapper">
-                    <div>
-                        <input type="radio" name="shippingoption" id="standard">
-                        <label for="standard">Standard delivery</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="shippingoption" id="express">
-                        <label for="express">Express delivery</label>
-                    </div>
-                </div>
-                <h5>Choose an payment option</h5>
-                <div class="form-wrapper">
-                    <div>
-                        <input type="radio" name="paymentoption" id="invoice">
-                        <label for="invoice">Invoice</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="paymentoption" id="card">
-                        <label for="card">Card payment</label>
-                    </div>
-                    <div class="cardpayment-details">
-                        <div class="label-wrap">
-                            <label for="cardnumber">Cardnumber*</label>
-                            <input type="text" name="cardnumber" id="cardnumber" required>
+                <fieldset>
+                    <legend>Delivery method</ledgend>
+                    <div class="form-wrapper">
+                        <div>
+                            <input type="radio" name="shippingoption" id="standard">
+                            <label for="standard">Standard delivery</label>
                         </div>
+                        <div>
+                            <input type="radio" name="shippingoption" id="express">
+                            <label for="express">Express delivery</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <ledgend>Choose an payment option</ledgend>
+                    <div class="form-wrapper">
+                        <div>
+                            <input type="radio" name="paymentoption" id="invoice">
+                            <label for="invoice">Invoice</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="paymentoption" id="card">
+                            <label for="card">Card payment</label>
+                        </div>
+                        <div class="cardpayment-details">
                             <div class="label-wrap">
-                                <label for="cvc">cvc*</label>
-                            <input type="text" name="cvc" id="cvc" required>
+                                <label for="cardnumber">Cardnumber*</label>
+                                <input type="text" name="cardnumber" id="cardnumber" required>
+                            </div>
+                                <div class="label-wrap">
+                                    <label for="cvc">cvc*</label>
+                                <input type="text" name="cvc" id="cvc" required>
+                            </div>
                         </div>
+                    <!-- <button type="submit">button</button> -->
+                    <a href="checkout-success.html" class="cta cta-blue cta-wide">Complete purchase</a>
                     </div>
-                  <!-- <button type="submit">button</button> -->
-                  <a href="checkout-success.html" class="cta cta-blue cta-wide">Complete purchase</a>
-                </div>
+                </fieldset>
             </form> 
         </section>
         <section class="order-details">
             <div class="order-details-heading">
-                <h6>Order details</h6>
+                <h3>Order details</h3>
                 <p class="checkout-count"></p>
             </div>
             <div class="order-details-items">

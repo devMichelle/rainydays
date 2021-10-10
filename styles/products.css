@@ -116,12 +116,39 @@ input[type="radio"]:checked + label {
   grid-gap: 10px;
 }
 
+/* --------------------------------
+This code is also on homepage (home.css) */
+
+.product-section {
+  margin-bottom: 20px;
+}
+
+.products-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 5px 0px 0px;
+}
+
+.product-details p {
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+}
+
 .product-name-link {
+  display: block;
   font-weight: bold;
   color: #000;
-  display: block;
   padding: 5px 0px;
+  margin: 0px;
 }
+/* ------------------------------ */
 
 .bottom-itemcount {
   grid-area: itemcount;

@@ -48,6 +48,10 @@ h2:hover {
 .size-color-selector {
   padding-bottom: 30px;
 }
+.size-selector {
+  margin-top: 5px;
+}
+
 .size-selector,
 .color-selector {
   display: flex;

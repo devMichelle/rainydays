@@ -26,6 +26,11 @@ p {
   font-size: 1em;
 }
 
+.regular-textcolor {
+  color: #000;
+  font-size: 1.2em;
+}
+
 /* Header 
 _____________ */
 
@@ -396,4 +401,15 @@ input[type="email"]:focus {
   color: darkred;
   display: none;
   margin: 0px 0px 15px;
+}
+
+/* --------------------------------
+               Forms
+-------------------------------- */
+
+fieldset {
+  border: none;
+  position: relative;
+  right: 17px;
+  margin-top: 10px;
 }
