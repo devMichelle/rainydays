@@ -355,10 +355,16 @@ label[for="email"] {
 input[type="email"]:focus {
   outline: none;
 }
+.newsletter-wrapper {
+  padding-top: 10px;
+}
 
 .newsletter-labelwrapper {
   display: inline-flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  position: relative;
+  right: 20px;
+  bottom: 22px;
 }
 
 .newsletter-error {
