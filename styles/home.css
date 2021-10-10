@@ -3,6 +3,7 @@ ______________ */
 
 .home-header {
   background-image: url("../images/home-header-img.jpg");
+  background-color: var(--signature-blue);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
