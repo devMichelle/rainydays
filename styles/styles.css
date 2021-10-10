@@ -356,6 +356,11 @@ input[type="email"]:focus {
   outline: none;
 }
 
+.newsletter-labelwrapper {
+  display: inline-flex;
+  flex-direction: column-reverse;
+}
+
 .newsletter-error {
   color: darkred;
   display: none;
