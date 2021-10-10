@@ -413,3 +413,31 @@ fieldset {
   right: 17px;
   margin-top: 10px;
 }
+
+/* --------------------------------
+          Redirect page
+-------------------------------- */
+
+.redirect-message {
+  background-color: var(--signature-blue);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.redirect-message p {
+  color: var(--white);
+  margin-bottom: 50px;
+  font-size: var(--regular-text);
+}
+
+.redirect {
+  margin: 10px;
+}
+
+.redirect-buttons {
+  display: flex;
+  flex-direction: column;
+}

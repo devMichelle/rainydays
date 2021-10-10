@@ -109,6 +109,22 @@ ______________ */
   .footer-customerserv {
     justify-self: center;
   }
+
+  /*Redirect-page (600px) */
+
+  .redirect-message {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .redirect {
+    margin: 25px;
+  }
+
+  .redirect-buttons {
+    display: block;
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -245,6 +261,15 @@ ______________ */
   .contact-form {
     width: 500px;
     padding-top: 5px;
+  }
+
+  /*Redirect-page (600px) */
+
+  .redirect-message {
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 50px;
+    font-size: initial;
   }
 }
 

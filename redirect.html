@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality rainjackets made for pushing the comfort zone on every adventure">
+    <title>Rainydays | Home</title>
+    <link href="styles/styles.css" rel="stylesheet"> 
+    <link href="styles/home.css" rel="stylesheet"> 
+    <link href="styles/media.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/rainydays_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://rainydays-online-store.netlify.app -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2637294,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-banner">
+            <img src=icons/delivery-icon.png alt="deliverytruck icon" class="header-icons">
+            <p> Free delivery | 30 day return policy</p>
+        </div>
+        <div class="top-menu-user">
+            <a href="#"><img src="icons/profile-icon.png" alt="" class="header-icons"><span class="top-menu-text">Login</span>
+            </a>
+            <a href="#"><img src="icons/help-icon.png" alt="" class="header-icons"><span class="top-menu-text">Help</span>
+            </a>
+        </div>
+        <div class="main-menu">
+            <a href="index.html"><img src="Images/rainydays_logo.png" alt="rainydays logo" class="logo"></a>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav>
+                <ul>
+                    <li><a href="products.html">News</a></li>
+                    <li><a href="products.html">Men</a></li>
+                    <li><a href="products.html">Women</a></li>
+                    <li><a href="products.html">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="shopping-icons">
+                <a href="#"><img src="icons/search-icon.png" alt="Search" class="header-icons">
+                </a>
+                <a href="#"><img src="icons/heart-icon.png" alt="View wishlist" class="header-icons">
+                    <span class="counter-wishlist wishlist-total"></span></a>
+                <a href="checkout.html"><img src="icons/shoppingcart-icon.png" alt="View shoppingcart" class="header-icons">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div class="redirect-message">
+            <h1>This page is unavailable at the moment</h1>
+            <p>We're sorry for the inconvenience</p>
+            <div class="redirect-buttons">
+                <a href="index.html" class="cta redirect">shop jackets</a>
+                <a href="contact.html" class="cta redirect">Contact us</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <hr>
+    <div class="footer-top">
+        <div>
+            <img src="icons/safe-payment-icon.png" alt="Safe payment icon">
+            <p class="footer-top-header">Safe payment</p>
+            <P>Our payment option are completely safe</P>
+        </div>
+        <div class="footer-top-delivery">
+            <img src="icons/delivery-icon-2.png" alt="deliverytruck icon" class="footer-delivery-icon">
+            <p class="footer-top-header">Delivery</p>
+            <p>We deliver within 3-5 working days after order</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-links-section footer-about">
+            <p class="footer-bottom-header">About</p>
+            <a href="about.html">Rainydays</a>
+        </div>
+        <div class="footer-links-section footer-customerserv">
+            <p class="footer-bottom-header">Customer sevice</p>
+            <a href="#">Help</a>
+            <a href="contact.html">Contact us</a>
+            <a href="#">Delivery details</a>
+            <a href="#">Return and exchange</a>
+        </div>
+        <div class="footer-links-section footer-contact">
+            <p class="footer-bottom-header">Contact details</p>
+            <p>webshop@rainydays.com</p>
+        </div>
+        <div class="footer-bottom-newsletter">
+            <p class="footer-bottom-header">Newsletter</p>
+            <p>Register now to get news and exclusive offers from Rainydays</p>
+            <!-- <label for="email">Your email adress</label> -->
+            <form class="newsletter-textbox">
+                <div class="newsletter-wrapper">
+                    <label for="emailSub" class="newsletter-labelwrapper">Your email adress
+                        <input type="email" name="email" placeholder="Email" id="emailSub">
+                    </label>
+                    <input type="submit" value="Subscribe" class="cta cta-small">
+                </div>
+                <div class="newsletter-error"></div>
+                <div class="newsletter-subscribed"></div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-banner">
+        Copyright &copy;
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
