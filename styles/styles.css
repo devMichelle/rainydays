@@ -158,7 +158,7 @@ ______________ */
 .cta {
   text-transform: uppercase;
   background-color: var(--orange);
-  color: #fcfbfb;
+  color: var(--white);
   padding: 10px 30px;
   font-size: 1.5em;
   text-align: center;
@@ -170,6 +170,7 @@ ______________ */
 
 .cta-small {
   font-size: 0.8em;
+  font-weight: bold;
   border: 2px solid transparent;
 }
 

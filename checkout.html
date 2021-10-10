@@ -32,9 +32,9 @@
             <p> Free delivery | 30 day return policy</p>
         </div>
         <div class="top-menu-user">
-            <a href="#"><img src="icons/profile-icon.png" alt="login" class="header-icons"><span class="top-menu-text">Login</span>
+            <a href="#"><img src="icons/profile-icon.png" alt="" class="header-icons"><span class="top-menu-text">Login</span>
             </a>
-            <a href="#"><img src="icons/help-icon.png" alt="help" class="header-icons"><span class="top-menu-text">Help</span>
+            <a href="#"><img src="icons/help-icon.png" alt="" class="header-icons"><span class="top-menu-text">Help</span>
             </a>
         </div>
         <div class="main-menu">
@@ -216,10 +216,13 @@
             <div class="footer-bottom-newsletter">
                 <p class="footer-bottom-header">Newsletter</p>
                 <p>Register now to get news and exclusive offers from Rainydays</p>
-                <label for="email">Your email adress</label>
                 <form class="newsletter-textbox">
-                    <input type="email" name="email" placeholder="Email" id="emailSub">
-                    <input type="submit" value="Subscribe" class="cta cta-small">
+                    <div class="newsletter-wrapper">
+                        <label for="emailSub" class="newsletter-labelwrapper">Your email adress
+                            <input type="email" name="email" placeholder="Email" id="emailSub">
+                        </label>
+                        <input type="submit" value="Subscribe" class="cta cta-small">
+                    </div>
                     <div class="newsletter-error"></div>
                     <div class="newsletter-subscribed"></div>
                 </form>

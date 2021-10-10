@@ -36,10 +36,11 @@ ______________ */
 }
 
 .products-header {
-  background-color: #ffa06d;
-  color: #fcfbfb;
+  background-color: var(--orange);
+  color: var(--white);
   text-align: center;
   padding: 20px 0px;
+  font-weight: bold;
 }
 
 .products-header h2 {
