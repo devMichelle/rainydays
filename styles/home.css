@@ -31,7 +31,7 @@ ______________ */
   grid-template-columns: 1fr;
   max-width: 1400px;
   margin: 10px auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
   padding: 0px 10px;
 }
 
@@ -51,11 +51,12 @@ ______________ */
 .product-section {
   margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
 .products-img {
-  width: 50vh;
+  width: 100%;
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;

@@ -20,7 +20,7 @@ async function getFeatured() {
                 
                                             
                     if (products[i].categories[k].id === 41) {
-                        console.log("featured");
+                        //console.log("featured");
                         featuredContainer.innerHTML += `
                                                     <a href="product-spesifics.html?id=${products[i].id}" id="notFeatured">
                                                         <div class="products-img"

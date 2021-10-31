@@ -27,7 +27,7 @@ h2:hover {
 .product-spesific-images {
   grid-area: product-images;
   padding: 0px 20px;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .product-image {
@@ -51,12 +51,17 @@ h2:hover {
   padding: 20px;
   grid-area: product-details;
 }
+
 .product-price {
   font-size: var(--regular-text);
+  margin-bottom: 50px;
 }
+
 .size-color-selector {
   padding-bottom: 30px;
+  margin-top: 50px;
 }
+
 .size-selector {
   margin-top: 5px;
 }

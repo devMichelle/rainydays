@@ -139,6 +139,15 @@ ______________ */
     max-width: 1400px;
   }
 
+  .product-section {
+    flex-direction: row;
+  }
+
+  .products-img {
+    width: 50vh;
+    height: 70vh;
+  }
+
   .products-header h2 {
     padding: 0px 40px;
     margin: 0px;
