@@ -10,6 +10,22 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.loading {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 20px solid var(--signature-blue);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
 /* fonts
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Roboto', sans-serif; */
@@ -440,4 +456,13 @@ fieldset {
 .redirect-buttons {
   display: flex;
   flex-direction: column;
+}
+
+/* --------------------------------
+          keyframes
+-------------------------------- */
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
 }

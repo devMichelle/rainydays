@@ -124,21 +124,25 @@ This code is also on homepage (home.css) */
 }
 
 .products-img {
-  width: 100%;
-  height: auto;
+  width: 50vh;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .product-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 5px 0px 0px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* align-items: center; */
+  padding: 0px 20px 10px;
+  margin: 0px;
+  color: #000;
 }
 
 .product-details p {
-  padding: 0px;
-  margin: 0px;
-  text-align: right;
+  /* padding: 0px;
+  margin: 0px; */
+  /* text-align: right; */
 }
 
 .product-name-link {
