@@ -1,4 +1,4 @@
-const productsUrl = "https://michellenarverud.no/rainydays_api/wp-json/wc/store/products";
+const productsUrl = "https://michellenarverud.no/rainydays_api/wp-json/wc/store/products/";
 const enableCors = "https://noroffcors.herokuapp.com/" + productsUrl;
 
 const productsContainer = document.querySelector(".jackets");
@@ -8,16 +8,16 @@ async function getProducts() {
         const response = await fetch(enableCors);
         const products = await response.json();
 
-        console.log(products);
+        //console.log(products);
 
         productsContainer.innerHTML = "";
 
 
         for (let i = 0; i < products.length; i++) {
 
-            //console.log(products[i]);
+           console.log(products[i]);
 
-            for (let j = 0; j < products[i].images.length; j++) {
+            //for (let j = 0; j < products[i].images.length; j++) {
 
                 //console.log(products[i].images[j]);
             
@@ -26,13 +26,13 @@ async function getProducts() {
             productsContainer.innerHTML += ` 
                                             <a href="product-spesifics.html?id=${products[i].id}">
                                                 <div class="products-img"
-                                                style="background-image: url(${products[i].images[j].src});"></div>
+                                                style="background-image: url(${products[i].images[0].src});"></div>
                                                 <div class="product-details">
                                                     <h4>${products[i].name}</h4>
                                                     <p>${products[i].price_html}</p>
                                                 </div>
                                             </a>`
-            }
+            //}
         }
 
 

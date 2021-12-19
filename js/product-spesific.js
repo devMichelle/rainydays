@@ -33,16 +33,16 @@ async function getProduct() {
             console.log(product.images[i])
 
         productContainer.innerHTML = ` <section class="product-spesific-images">
-                                            <img src="${product.images[i].src}" alt="Productpicture of rain jacket" class="product-image">
+                                            <img src="${product.images[0].src}" alt="Productpicture of rain jacket" class="product-image">
                                             <div class="product-image-thumbnails">
                                                 <div>
-                                                    <img src="${product.images[i].src}" alt="Productpicture of rain jacket" class="thumbnail">
+                                                    <img src="${product.images[1].src}" alt="Productpicture of rain jacket" class="thumbnail">
                                                 </div>
                                                 <div>
-                                                    <img src="${product.images[i].src}" alt="Productpicture of rain jacket" class="thumbnail">
+                                                    <img src="${product.images[2].src}" alt="Productpicture of rain jacket" class="thumbnail">
                                                 </div>
                                                 <div>
-                                                    <img src="${product.images[i].src}" alt="Productpicture of rain jacket" class="thumbnail">
+                                                    <img src="${product.images[3].src}" alt="Productpicture of rain jacket" class="thumbnail">
                                                 </div>
                                             </div>
                                         </section>

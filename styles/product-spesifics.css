@@ -35,16 +35,18 @@ h2:hover {
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 
 .product-image-thumbnails {
   display: flex;
   gap: 10px;
   margin-top: 5px;
+  /* object-fit: scale-down; */
 }
 
 .thumbnail {
-  height: 30vh;
+  height: 25vh;
 }
 
 .product-spesific-details {
